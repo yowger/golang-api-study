@@ -1,0 +1,14 @@
+Get all items
+    curl http://localhost:8080/items
+
+Create an item
+    curl -X POST -H "Content-Type: application/json" -d '{"name":"Tablet","price":300}' http://localhost:8080/items
+
+Get a specific item
+    curl http://localhost:8080/items/1
+
+Delete an item
+    curl -X DELETE http://localhost:8080/items/2
+
+
+
