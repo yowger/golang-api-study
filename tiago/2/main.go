@@ -21,7 +21,8 @@ var users = []User{}
 func (a *api) getUserHandler(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 
-	users = append(users, []User{{FirstName: "Tiago", LastName: "Silva"}, {FirstName: "Paulo", LastName: "Silva"}, {FirstName: "Ricardo", LastName: "Silva"}}...)
+	newUsers := []User{{FirstName: "Tiago", LastName: "Silva"} 
+	users = append(users, newUsers...)
 
 	fmt.Println("Users: ", users)
 
